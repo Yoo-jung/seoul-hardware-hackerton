@@ -1,0 +1,57 @@
+내가 그부분 회로 알려줄테니까 하라고 해요
+그리고 npn mofet이나 tr 담으라고 하고
+[유민상] [오후 5:17] 2n2222 2n7002
+[유민상] [오후 5:17] 이런걸로
+
+
+엑세스 키 ID : AKIASVFNOB6L42BLG77B
+비밀 엑세스 키 ID : vDMswo1WmnMHdpxOKewaMhM2m7TLZq3HchLl0kaw
+비밀번호 : *Z%LeR|&-*SIKT@    -> @moon0406
+ULR : https://dbwjd0406.signin.aws.amazon.com/console
+ap-northeast-
+별칭 : dbwjd0406
+name : YooJung
+@moon0406
+
+keypair Name : dbwjd
+keypair ID : key-00ca9da271d0589f2
+
+
+dbwjd@DESKTOP-MNGSIJL:/mnt/c/SHH2022/AWS$ aws iam list-users
+{
+    "Users": [
+        {
+            "Path": "/",
+            "UserName": "YooJung",
+            "UserId": "AIDASVFNOB6LSBRN5GVBN",
+            "Arn": "arn:aws:iam::182899838871:user/YooJung",
+            "CreateDate": "2021-12-30T13:45:23Z",
+            "PasswordLastUsed": "2021-12-31T10:12:34Z"
+        }
+    ]
+}
+dbwjd@DESKTOP-MNGSIJL:/mnt/c/SHH2022/AWS$ aws ec2 describe-vpcs
+{
+    "Vpcs": [
+        {
+            "CidrBlock": "172.31.0.0/16",
+            "DhcpOptionsId": "dopt-0b6e3611ec00078ea",
+            "State": "available",
+            "VpcId": "vpc-07e6572ca0a09ef36",
+            "OwnerId": "182899838871",
+            "InstanceTenancy": "default",
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-006d993246cc214d8",
+                    "CidrBlock": "172.31.0.0/16",
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+
+        }
+    ]
+}
+dbwjd@DESKTOP-MNGSIJL:/mnt/c/SHH2022/AWS$ aws ec2 describe-security-groups --group-name HelloWorld --out text
+SECURITYGROUPS  Hello World Demo        sg-07e6b967d7b8c2d2c    HelloWorld      182899838871    vpc-07e6572ca0a09ef36
