@@ -1,0 +1,31 @@
+<?php
+  $user = $_GET['user']; 
+  $p = $_GET['p']; 
+?>
+
+<html>
+	<BODY bgcolor="#CCEEFF">
+	<head>
+		<title> TaCar_UserPage </title>
+	</head>
+	<body>
+		<h1> Hi! <?php echo $user ?> :) </h1>
+		<h2> Im <FONT color="#FFFF00"><strong>TaCar<strong></FONT> </h2>
+	
+
+		<form method="get" action="dbwjd1.php">
+			Add More : <input name="p" type="text">
+			<input type="submit" value="Add">
+		</form>
+
+		<p> This is User's Shopping list </p>
+		<ul>
+		     <li> Apple </li>
+		     <li> Water </li>
+		     <li> <?php echo $p ?> </li>
+		</ul>
+		<form action="bye.php">
+		<p> <input type="submit" value="Go Pay!"> </p>
+		</form>
+	</body>
+</html>

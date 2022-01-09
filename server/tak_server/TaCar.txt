@@ -1,0 +1,37 @@
+<html>
+	<BODY bgcolor="#CCEEFF">
+	<head>
+		<title> TaCar </title>
+	</head>
+	<body>
+		<h1> Hi! User :) </h1>
+		<h2> Im <FONT color="#FFFF00"><strong>TaCar<strong></FONT> </h2>		
+
+		<form method="get" action="dbwjd1.php">
+			ID : <input name='user' type="text"><br>
+			Add Product: <input name='p' type="text">
+			<input type="submit" value="Add">
+		</form>
+	
+		<br>
+
+		Date & Time :
+		<?php
+			$TIMESTAMP = time();
+			echo $TIMESTAMP;
+		?>
+
+		<br>
+		<form>
+			<input type="date" id="currentDate">
+		</form>
+		<script>
+			document.getElementById("currentDate").value=new Date().toISOSting().slice(0,10);
+		</script>
+		<br>
+		<br>
+		<p> Have a GoodShop~! </p><br><br><br>
+		<a href="dbwjd1.php">Go to Your Shopping List Now!</a>
+		
+	</body>
+</html>
