@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>follower</name>
+  <version>1.1.0</version>
+  <description>
+    human followe
+  </description>
+  <license>Apache 2.0</license>
+  <author email="yulim2ee@naver.com">Gilbert</author>\
+  <url type="repository">https://github.com/gcuutakeout</url>
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>rospy</depend>
+  <depend>std_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>nav_msgs</depend>
+</package>
